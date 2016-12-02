@@ -1,0 +1,16 @@
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\CapaNegocio.dll.config
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\CapaDato.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\CapaInterface.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\EntityFramework.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\CapaDato.pdb
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\CapaInterface.pdb
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\EntityFramework.xml
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\obj\Debug\CapaNegocio.pdb

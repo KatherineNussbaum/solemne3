@@ -1,0 +1,9 @@
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaInterface\bin\Debug\CapaInterface.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaInterface\bin\Debug\CapaInterface.pdb
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaInterface\bin\Debug\CapaDato.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaInterface\bin\Debug\CapaEntidad.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaInterface\bin\Debug\CapaDato.pdb
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaInterface\bin\Debug\CapaEntidad.pdb
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaInterface\obj\Debug\CapaInterface.csprojResolveAssemblyReference.cache
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaInterface\obj\Debug\CapaInterface.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaInterface\obj\Debug\CapaInterface.pdb

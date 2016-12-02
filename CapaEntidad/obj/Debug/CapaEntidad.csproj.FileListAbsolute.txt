@@ -1,0 +1,5 @@
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaEntidad\obj\Debug\CapaEntidad.csprojResolveAssemblyReference.cache
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaEntidad\obj\Debug\CapaEntidad.pdb

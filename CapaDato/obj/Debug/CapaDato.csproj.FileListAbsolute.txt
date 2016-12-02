@@ -1,0 +1,10 @@
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\bin\Debug\CapaDato.dll.config
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\bin\Debug\CapaDato.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\bin\Debug\CapaDato.pdb
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\bin\Debug\EntityFramework.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\bin\Debug\EntityFramework.xml
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\obj\Debug\CapaDato.csprojResolveAssemblyReference.cache
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\obj\Debug\CapaDato.dll
+C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\obj\Debug\CapaDato.pdb
