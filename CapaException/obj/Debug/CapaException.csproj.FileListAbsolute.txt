@@ -1,0 +1,5 @@
+C:\Users\rvergara\Documents\GitHub\solemne3\CapaException\bin\Debug\CapaException.dll
+C:\Users\rvergara\Documents\GitHub\solemne3\CapaException\bin\Debug\CapaException.pdb
+C:\Users\rvergara\Documents\GitHub\solemne3\CapaException\obj\Debug\CapaException.csprojResolveAssemblyReference.cache
+C:\Users\rvergara\Documents\GitHub\solemne3\CapaException\obj\Debug\CapaException.dll
+C:\Users\rvergara\Documents\GitHub\solemne3\CapaException\obj\Debug\CapaException.pdb
