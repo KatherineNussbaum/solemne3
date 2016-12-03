@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace CapaEntidad
 {
-    class BoletaVendedorCliente
+    public class BoletaVendedorCliente
 
     {
-        public int NumeroBoleta { get; set; }
+        public decimal NumeroBoleta { get; set; }
         public DateTime Fecha { get; set; }
         public string Estado { get; set; }
         public string VendedorNombreCompleto { get; set; }

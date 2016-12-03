@@ -8,7 +8,7 @@ using CapaDato;
 
 namespace CapaInterface
 {
-    interface IVendedorBO
+    public interface IVendedorBO
     {
         IList<Vendedor> ListarVendedores();
 

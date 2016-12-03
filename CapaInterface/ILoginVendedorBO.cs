@@ -8,10 +8,10 @@ using CapaDato;
 
 namespace CapaInterface
 {
-    interface ILoginVendedorBO
+    public interface ILoginVendedorBO
     {
         IList<LoginVendedor> ListarLoginVendedor();
 
-        LoginVendedor BuscarLoginVendedor(int IdVendedor);
+        LoginVendedor BuscarLoginVendedor(string usuario);
     }
 }

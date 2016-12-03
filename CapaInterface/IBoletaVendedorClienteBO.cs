@@ -8,7 +8,7 @@ using CapaEntidad;
 
 namespace CapaInterface
 {
-    interface IBoletaVendedorClienteBO
+    public interface IBoletaVendedorClienteBO
     {
         IList<BoletaVendedorCliente> ListarBoletaVendedorCliente();
     }

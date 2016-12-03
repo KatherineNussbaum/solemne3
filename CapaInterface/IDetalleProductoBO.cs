@@ -8,8 +8,8 @@ using CapaEntidad;
 
 namespace CapaInterface
 {
-    interface IDetalleProductoBO
+    public interface IDetalleProductoBO
     {
-        IList<DetalleProducto> ListarDetalleProductos();
+        IList<DetalleProducto> ListarDetalleProductos(decimal? NumeroBoleta);
     }
 }
