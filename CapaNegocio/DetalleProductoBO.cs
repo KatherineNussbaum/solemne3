@@ -18,15 +18,15 @@ namespace CapaNegocio
         public DetalleProductoBO()
         {
             this._objContext = new FuenteSodaEntities();
-            this._objContext.Configuration.ProxyCreationEnabled = false;
+            //this._objContext.Configuration.ProxyCreationEnabled = false;
         }
 
-        public IList<DetalleProducto> ListarDetalleProductos(decimal? NumeroBoleta)
+        public IList<DetalleProducto> ListarDetalleProductos(decimal numeroBoleta)
         {
             IList<DetalleProducto> detalle = (from d in _objContext.DetalleBoleta
                                               join p in _objContext.Producto
                                               on d.IdProducto equals p.IdProducto
-                                              where d.NumeroBoleta == NumeroBoleta
+                                              where d.NumeroBoleta == numeroBoleta
                                               select new DetalleProducto
                                               {
                                                   IdDetalle = d.IdDetalle,
@@ -34,8 +34,7 @@ namespace CapaNegocio
                                                   ProductoNombre = p.Nombre,
                                                   ProductoPrecio = p.Precio,
                                                   Cantidad = d.Cantidad
-                                              }
-                                             ).FirstOrDefault();
+                                              }).ToList();
             return detalle;
         }
     }

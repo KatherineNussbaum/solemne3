@@ -12,6 +12,6 @@ namespace CapaInterface
     {
         IList<Vendedor> ListarVendedores();
 
-        Vendedor BuscarVendedor(int IdVendedor);
+        Vendedor BuscarVendedor(decimal IdVendedor);
     }
 }

@@ -13,7 +13,7 @@ namespace CapaInterface
         bool VerificarCliente(string rut);
         bool EliminarCliente(string rut);
         bool AgregarCliente(string rut, string nombreCompleto, string direccion);
-        bool ModificarCliente(int idCliente, string rut, string nombreCompleto, string direccion);
+        bool ModificarCliente(decimal idCliente, string rut, string nombreCompleto, string direccion);
         Cliente BuscarCliente(string rut);
     }
 }

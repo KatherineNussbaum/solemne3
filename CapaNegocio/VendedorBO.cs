@@ -25,7 +25,7 @@ namespace CapaNegocio
             return this._objContext.Vendedor.ToList();
         }
 
-        public Vendedor BuscarVendedor(int IdVendedor)
+        public Vendedor BuscarVendedor(decimal IdVendedor)
         {
             return this._objContext.Vendedor.FirstOrDefault(v => v.IdVendedor == IdVendedor);
         }

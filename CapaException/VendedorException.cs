@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CapaException
 {
-    class VendedorException : Exception
+    public class VendedorException : Exception
     {
-        public public VendedorException(string mensaje) : base(mensaje)
+        public VendedorException(string mensaje) : base(mensaje)
         {
 
         }

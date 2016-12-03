@@ -12,7 +12,7 @@ namespace CapaEntidad
         public decimal? NumeroBoleta { get; set; }
         public string ProductoNombre { get; set; }
         public decimal? ProductoPrecio { get; set; }
-        public decimal Cantidad { get; set; }
+        public decimal? Cantidad { get; set; }
 
         public DetalleProducto()
         {
