@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace CapaEntidad
 {
-    class DetalleProducto
+    public class DetalleProducto
     {
-        public int IdDetalle { get; set; }
-        public int NumeroBoleta { get; set; }
+        public decimal IdDetalle { get; set; }
+        public decimal? NumeroBoleta { get; set; }
         public string ProductoNombre { get; set; }
-        public int ProductoPrecio { get; set; }
-        public int Cantidad { get; set; }
+        public decimal? ProductoPrecio { get; set; }
+        public decimal Cantidad { get; set; }
 
         public DetalleProducto()
         {
             this.ProductoNombre = string.Empty;
-            this.IdDetalle = this.NumeroBoleta = this.ProductoPrecio = this.Cantidad = 0;
+            
         }
 
     }
