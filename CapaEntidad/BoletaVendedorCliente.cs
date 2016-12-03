@@ -10,15 +10,14 @@ namespace CapaEntidad
 
     {
         public decimal NumeroBoleta { get; set; }
-        public DateTime Fecha { get; set; }
+        public DateTime? Fecha { get; set; }
         public string Estado { get; set; }
-        public string VendedorNombreCompleto { get; set; }
         public string ClienteRut { get; set; }
         public string ClienteNombreCompleto { get; set; }
         
         public BoletaVendedorCliente()
         {
-            this.Estado = this.VendedorNombreCompleto = this.ClienteRut = this.ClienteNombreCompleto = string.Empty;
+            this.Estado = this.ClienteRut = this.ClienteNombreCompleto = string.Empty;
         }
 
     }
