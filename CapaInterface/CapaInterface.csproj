@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IBoletaVendedorClienteBO.cs" />
+    <Compile Include="IDetalleProductoBO.cs" />
+    <Compile Include="ILoginVendedorBO.cs" />
+    <Compile Include="IProductoBO.cs" />
+    <Compile Include="IVendedorBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
