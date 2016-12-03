@@ -8,7 +8,7 @@ namespace CapaException
 {
     public class VendedorException : Exception
     {
-        public public VendedorException(string mensaje) : base(mensaje)
+        public VendedorException(string mensaje) : base(mensaje)
         {
 
         }

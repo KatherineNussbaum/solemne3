@@ -58,7 +58,7 @@ namespace CapaNegocio
             return false;
         }
 
-        public bool ModificarCliente(int idCliente, string rut, string nombreCompleto, string direccion)
+        public bool ModificarCliente(decimal idCliente, string rut, string nombreCompleto, string direccion)
         {
             if(idCliente <= 0)
             {
