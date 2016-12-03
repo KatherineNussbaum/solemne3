@@ -28,3 +28,23 @@ C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaWeb\bin\Microsoft.Code
 C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaWeb\obj\Debug\CapaWeb.csprojResolveAssemblyReference.cache
 C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaWeb\obj\Debug\CapaWeb.dll
 C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaWeb\obj\Debug\CapaWeb.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\roslyn\csc.exe
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\roslyn\System.Collections.Immutable.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\roslyn\System.Reflection.Metadata.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\roslyn\vbc.exe
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\roslyn\VBCSCompiler.exe
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\roslyn\VBCSCompiler.exe.config
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\CapaWeb.dll.config
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\CapaWeb.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\CapaWeb.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\obj\Debug\CapaWeb.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\obj\Debug\CapaWeb.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaWeb\obj\Debug\CapaWeb.csprojResolveAssemblyReference.cache

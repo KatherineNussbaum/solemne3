@@ -17,7 +17,6 @@ namespace CapaEntidad
         public DetalleProducto()
         {
             this.ProductoNombre = string.Empty;
-            
         }
 
     }

@@ -3,3 +3,7 @@ C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaEntidad\bin\Debug\Capa
 C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaEntidad\obj\Debug\CapaEntidad.csprojResolveAssemblyReference.cache
 C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaEntidad\obj\Debug\CapaEntidad.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaEntidad\bin\Debug\CapaEntidad.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaEntidad\bin\Debug\CapaEntidad.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaEntidad\obj\Debug\CapaEntidad.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaEntidad\obj\Debug\CapaEntidad.pdb

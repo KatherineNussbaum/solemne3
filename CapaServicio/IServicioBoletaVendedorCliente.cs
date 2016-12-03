@@ -17,6 +17,6 @@ namespace CapaServicio
     public interface IServicioBoletaVendedorCliente
     {
         [OperationContract]
-        IList<BoletaVendedorCliente> ListarBoletaVendedorCliente(decimal idVendedor);
+        IList<BoletaVendedorCliente> ListarBoletaVendedorCliente(string usuario);
     }
 }

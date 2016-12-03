@@ -27,9 +27,9 @@ namespace CapaServicio
             return this._loginVendedorBO.BuscarLoginVendedor(usuario);
         }
 
-        public IList<LoginVendedor> ListarLoginVendedor()
+        public bool VerificarLoginVendedor(string usario)
         {
-            return this._loginVendedorBO.ListarLoginVendedor();
+            return this._loginVendedorBO.VerificarLoginVendedor(usario);
         }
     }
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:65277/ServicioVendedor.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CapaDato" />
+  <xs:element name="ListarVendedores">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarVendedoresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CapaDato" minOccurs="0" name="ListarVendedoresResult" nillable="true" type="q1:ArrayOfVendedor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarVendedor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdVendedor" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarVendedorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CapaDato" minOccurs="0" name="BuscarVendedorResult" nillable="true" type="q2:Vendedor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarVendedorUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarVendedorUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CapaDato" minOccurs="0" name="BuscarVendedorUsuarioResult" nillable="true" type="q3:Vendedor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -50,7 +50,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoletaBO.cs" />
+    <Compile Include="BoletaVendedorClienteBO.cs" />
+    <Compile Include="ClienteBO.cs" />
+    <Compile Include="DetalleProductoBO.cs" />
+    <Compile Include="LoginVendedorBO.cs" />
+    <Compile Include="ProductoBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VendedorBO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -64,6 +71,10 @@
     <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
       <Project>{81831868-fcab-44ed-9f5d-3c1eb0ebc36f}</Project>
       <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaException\CapaException.csproj">
+      <Project>{ffaa5ae7-d641-43eb-9545-5578136ffaae}</Project>
+      <Name>CapaException</Name>
     </ProjectReference>
     <ProjectReference Include="..\CapaInterface\CapaInterface.csproj">
       <Project>{f3694615-2d2b-4165-9d0b-c0c0c9744e4c}</Project>

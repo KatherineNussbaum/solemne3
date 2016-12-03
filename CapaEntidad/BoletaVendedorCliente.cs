@@ -14,10 +14,10 @@ namespace CapaEntidad
         public string Estado { get; set; }
         public string ClienteRut { get; set; }
         public string ClienteNombreCompleto { get; set; }
-        
+        public string UsuarioVendedor { get; set; }
         public BoletaVendedorCliente()
         {
-            this.Estado = this.ClienteRut = this.ClienteNombreCompleto = string.Empty;
+            this.Estado = this.ClienteRut = this.ClienteNombreCompleto = this.UsuarioVendedor = string.Empty;
         }
 
     }

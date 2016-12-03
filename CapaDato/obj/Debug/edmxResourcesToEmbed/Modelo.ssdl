@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FuenteSodaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Boleta">
+    <Key>
+      <PropertyRef Name="NumeroBoleta" />
+    </Key>
+    <Property Name="NumeroBoleta" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fecha" Type="date" />
+    <Property Name="Estado" Type="varchar" MaxLength="1" />
+    <Property Name="IdCliente" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="IdVendedor" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Total" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="IdCliente" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Rut" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="NombreCompleto" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="DetalleBoleta">
+    <Key>
+      <PropertyRef Name="IdDetalle" />
+    </Key>
+    <Property Name="IdDetalle" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeroBoleta" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="IdProducto" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Cantidad" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="LoginVendedor">
+    <Key>
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="Usuario" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="IdProducto" />
+    </Key>
+    <Property Name="IdProducto" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Precio" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Vendedor">
+    <Key>
+      <PropertyRef Name="IdVendedor" />
+    </Key>
+    <Property Name="IdVendedor" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Rut" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="NombreCompleto" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion" Type="varchar" MaxLength="100" />
+    <Property Name="Sexo" Type="varchar" MaxLength="1" />
+    <Property Name="Telefono" Type="varchar" MaxLength="10" />
+    <Property Name="Usuario" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Boleta_Cliente">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="0..1" />
+    <End Role="Boleta" Type="Self.Boleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="Boleta">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Boleta_Vendedor">
+    <End Role="Vendedor" Type="Self.Vendedor" Multiplicity="0..1" />
+    <End Role="Boleta" Type="Self.Boleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendedor">
+        <PropertyRef Name="IdVendedor" />
+      </Principal>
+      <Dependent Role="Boleta">
+        <PropertyRef Name="IdVendedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleBoleta_Boleta">
+    <End Role="Boleta" Type="Self.Boleta" Multiplicity="0..1" />
+    <End Role="DetalleBoleta" Type="Self.DetalleBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Boleta">
+        <PropertyRef Name="NumeroBoleta" />
+      </Principal>
+      <Dependent Role="DetalleBoleta">
+        <PropertyRef Name="NumeroBoleta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleBoleta_Producto">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="DetalleBoleta" Type="Self.DetalleBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="DetalleBoleta">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vendedor_LoginVendedor">
+    <End Role="LoginVendedor" Type="Self.LoginVendedor" Multiplicity="0..1" />
+    <End Role="Vendedor" Type="Self.Vendedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoginVendedor">
+        <PropertyRef Name="Usuario" />
+      </Principal>
+      <Dependent Role="Vendedor">
+        <PropertyRef Name="Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FuenteSodaModelStoreContainer">
+    <EntitySet Name="Boleta" EntityType="Self.Boleta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetalleBoleta" EntityType="Self.DetalleBoleta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoginVendedor" EntityType="Self.LoginVendedor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vendedor" EntityType="Self.Vendedor" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Boleta_Cliente" Association="Self.FK_Boleta_Cliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Boleta" EntitySet="Boleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Boleta_Vendedor" Association="Self.FK_Boleta_Vendedor">
+      <End Role="Vendedor" EntitySet="Vendedor" />
+      <End Role="Boleta" EntitySet="Boleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleBoleta_Boleta" Association="Self.FK_DetalleBoleta_Boleta">
+      <End Role="Boleta" EntitySet="Boleta" />
+      <End Role="DetalleBoleta" EntitySet="DetalleBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleBoleta_Producto" Association="Self.FK_DetalleBoleta_Producto">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="DetalleBoleta" EntitySet="DetalleBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vendedor_LoginVendedor" Association="Self.FK_Vendedor_LoginVendedor">
+      <End Role="LoginVendedor" EntitySet="LoginVendedor" />
+      <End Role="Vendedor" EntitySet="Vendedor" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

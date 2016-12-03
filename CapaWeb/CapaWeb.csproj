@@ -44,20 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -74,8 +68,152 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AgregarCliente.aspx" />
+    <Content Include="DatosPersonales.aspx" />
     <Content Include="Index.aspx" />
+    <Content Include="ModificarEliminarCliente.aspx" />
     <Content Include="packages.config" />
+    <Content Include="Productos.aspx" />
+    <Content Include="Service References\BoletaServ\CapaWeb.BoletaServ.Boleta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\BoletaServ\ServicioBoleta.disco" />
+    <None Include="Service References\BoletaServ\configuration91.svcinfo" />
+    <None Include="Service References\BoletaServ\configuration.svcinfo" />
+    <None Include="Service References\BoletaServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\BoletaVendedorClienteServ\CapaWeb.BoletaVendedorClienteServ.BoletaVendedorCliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\BoletaServ\ServicioBoleta.wsdl" />
+    <None Include="Service References\BoletaServ\ServicioBoleta.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BoletaServ\ServicioBoleta1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BoletaServ\ServicioBoleta2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BoletaVendedorClienteServ\ServicioBoletaVendedorCliente.disco" />
+    <None Include="Service References\BoletaVendedorClienteServ\configuration91.svcinfo" />
+    <None Include="Service References\BoletaVendedorClienteServ\configuration.svcinfo" />
+    <None Include="Service References\BoletaVendedorClienteServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\ClienteServ\CapaWeb.ClienteServ.Cliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\BoletaVendedorClienteServ\ServicioBoletaVendedorCliente.wsdl" />
+    <None Include="Service References\BoletaVendedorClienteServ\ServicioBoletaVendedorCliente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BoletaVendedorClienteServ\ServicioBoletaVendedorCliente1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BoletaVendedorClienteServ\ServicioBoletaVendedorCliente2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClienteServ\ServicioCliente.disco" />
+    <None Include="Service References\ClienteServ\configuration91.svcinfo" />
+    <None Include="Service References\ClienteServ\configuration.svcinfo" />
+    <None Include="Service References\ClienteServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\DetalleProductoServ\CapaWeb.DetalleProductoServ.DetalleProducto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\DetalleProductoServ\ServicioDetalleProducto.disco" />
+    <None Include="Service References\DetalleProductoServ\configuration91.svcinfo" />
+    <None Include="Service References\DetalleProductoServ\configuration.svcinfo" />
+    <None Include="Service References\DetalleProductoServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\LoginVendedorServ\CapaWeb.LoginVendedorServ.LoginVendedor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\LoginVendedorServ\ServicioLoginVendedor.disco" />
+    <None Include="Service References\LoginVendedorServ\configuration91.svcinfo" />
+    <None Include="Service References\LoginVendedorServ\configuration.svcinfo" />
+    <None Include="Service References\LoginVendedorServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\ProductoServ\CapaWeb.ProductoServ.Producto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ProductoServ\ServicioProducto.disco" />
+    <None Include="Service References\ProductoServ\configuration91.svcinfo" />
+    <None Include="Service References\ProductoServ\configuration.svcinfo" />
+    <None Include="Service References\ProductoServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\VendedorServ\CapaWeb.VendedorServ.Vendedor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\VendedorServ\ServicioVendedor.disco" />
+    <None Include="Service References\VendedorServ\configuration91.svcinfo" />
+    <None Include="Service References\VendedorServ\configuration.svcinfo" />
+    <None Include="Service References\VendedorServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ClienteServ\ServicioCliente.wsdl" />
+    <None Include="Service References\ClienteServ\ServicioCliente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClienteServ\ServicioCliente1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClienteServ\ServicioCliente2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DetalleProductoServ\ServicioDetalleProducto.wsdl" />
+    <None Include="Service References\DetalleProductoServ\ServicioDetalleProducto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DetalleProductoServ\ServicioDetalleProducto1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DetalleProductoServ\ServicioDetalleProducto2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LoginVendedorServ\ServicioLoginVendedor.wsdl" />
+    <None Include="Service References\LoginVendedorServ\ServicioLoginVendedor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LoginVendedorServ\ServicioLoginVendedor1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LoginVendedorServ\ServicioLoginVendedor2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProductoServ\ServicioProducto.wsdl" />
+    <None Include="Service References\ProductoServ\ServicioProducto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProductoServ\ServicioProducto1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProductoServ\ServicioProducto2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VendedorServ\ServicioVendedor.wsdl" />
+    <None Include="Service References\VendedorServ\ServicioVendedor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VendedorServ\ServicioVendedor1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VendedorServ\ServicioVendedor2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Template.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -83,13 +221,32 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Web.sitemap" />
+    <Content Include="Ventas.aspx" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarCliente.aspx.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarCliente.aspx.designer.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatosPersonales.aspx.cs">
+      <DependentUpon>DatosPersonales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatosPersonales.aspx.designer.cs">
+      <DependentUpon>DatosPersonales.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -100,7 +257,56 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ModificarEliminarCliente.aspx.cs">
+      <DependentUpon>ModificarEliminarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarEliminarCliente.aspx.designer.cs">
+      <DependentUpon>ModificarEliminarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\BoletaServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BoletaVendedorClienteServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ClienteServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DetalleProductoServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LoginVendedorServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProductoServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\VendedorServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Template.Master.cs">
       <DependentUpon>Template.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,24 +314,29 @@
     <Compile Include="Template.Master.designer.cs">
       <DependentUpon>Template.Master</DependentUpon>
     </Compile>
+    <Compile Include="Ventas.aspx.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ventas.aspx.designer.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CapaDato\CapaDato.csproj">
-      <Project>{d3e9501f-832b-4dbd-a4ef-c0459aa34023}</Project>
-      <Name>CapaDato</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CapaInterface\CapaInterface.csproj">
-      <Project>{f3694615-2d2b-4165-9d0b-c0c0c9744e4c}</Project>
-      <Name>CapaInterface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
-      <Project>{adef9677-a7ba-449e-922f-68f4f76002ef}</Project>
-      <Name>CapaNegocio</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BoletaServ\" />
+    <WCFMetadataStorage Include="Service References\BoletaVendedorClienteServ\" />
+    <WCFMetadataStorage Include="Service References\ClienteServ\" />
+    <WCFMetadataStorage Include="Service References\DetalleProductoServ\" />
+    <WCFMetadataStorage Include="Service References\LoginVendedorServ\" />
+    <WCFMetadataStorage Include="Service References\ProductoServ\" />
+    <WCFMetadataStorage Include="Service References\VendedorServ\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

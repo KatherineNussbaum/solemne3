@@ -26,5 +26,7 @@ namespace CapaServicio
         bool ModificarCliente(decimal idCliente, string rut, string nombreCompleto, string direccion);
         [OperationContract]
         Cliente BuscarCliente(string rut);
+        [OperationContract]
+        IList<Cliente> ListarClientes();
     }
 }

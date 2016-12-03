@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="10af0496-e45a-4caa-b3d9-25c225fed0f2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:65277/ServicioVendedor.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioVendedor.xsd" MetadataType="Schema" ID="30cf6cc9-f857-402e-91c9-94a3fe3cb50b" SourceId="1" SourceUrl="http://localhost:65277/ServicioVendedor.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioVendedor1.xsd" MetadataType="Schema" ID="9d23db52-2261-4b45-93d8-081de782d9ec" SourceId="1" SourceUrl="http://localhost:65277/ServicioVendedor.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioVendedor.disco" MetadataType="Disco" ID="7dcb105e-a02f-47f9-992c-ab21e5198aaf" SourceId="1" SourceUrl="http://localhost:65277/ServicioVendedor.svc?disco" />
+    <MetadataFile FileName="ServicioVendedor.wsdl" MetadataType="Wsdl" ID="be51d6a4-b8ca-4d54-b133-acd872ebca39" SourceId="1" SourceUrl="http://localhost:65277/ServicioVendedor.svc?wsdl" />
+    <MetadataFile FileName="ServicioVendedor2.xsd" MetadataType="Schema" ID="5675827b-0e4b-4a3e-9a0b-273d153f108c" SourceId="1" SourceUrl="http://localhost:65277/ServicioVendedor.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

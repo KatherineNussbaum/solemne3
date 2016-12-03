@@ -16,6 +16,7 @@ namespace CapaNegocio
         public ClienteBO()
         {
             this._objContext = new FuenteSodaEntities();
+            this._objContext.Configuration.ProxyCreationEnabled = false;
         }
 
         public bool AgregarCliente(string rut, string nombreCompleto, string direccion)
@@ -56,6 +57,11 @@ namespace CapaNegocio
                 return this._objContext.SaveChanges() > 0;
             }
             return false;
+        }
+
+        public IList<Cliente> ListarClientes()
+        {
+            return this._objContext.Cliente.ToList();
         }
 
         public bool ModificarCliente(decimal idCliente, string rut, string nombreCompleto, string direccion)

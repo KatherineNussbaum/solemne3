@@ -21,9 +21,14 @@ namespace CapaServicio
         {
             this._vendedorBO = new VendedorBO();
         }
-        public Vendedor BuscarVendedor(decimal IdVendedor)
+        public Vendedor BuscarVendedor(decimal idVendedor)
         {
-            return this._vendedorBO.BuscarVendedor(IdVendedor);
+            return this._vendedorBO.BuscarVendedor(idVendedor);
+        }
+
+        public Vendedor BuscarVendedorUsuario(string usuario)
+        {
+            return this._vendedorBO.BuscarVendedorUsuario(usuario);
         }
 
         public IList<Vendedor> ListarVendedores()
