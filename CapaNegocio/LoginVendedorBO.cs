@@ -20,13 +20,21 @@ namespace CapaNegocio
             this._objContext.Configuration.ProxyCreationEnabled = false;
         }
 
-        public IList<LoginVendedor> ListarLoginVendedor()
+        public bool VerificarLoginVendedor(string usuario)
         {
-            return this._objContext.LoginVendedor.ToList();
+            if(string.IsNullOrEmpty(usuario) || string.IsNullOrWhiteSpace(usuario))
+            {
+                throw new LoginVendedorException("Falta: usuario");
+            }
+            return this._objContext.Vendedor.Any(v => v.Usuario == usuario);
         }
 
         public LoginVendedor BuscarLoginVendedor(string usuario)
         {
+            if(string.IsNullOrEmpty(usuario) || string.IsNullOrWhiteSpace(usuario))
+            {
+                throw new LoginVendedorException("Falta: usuario");
+            }
             return this._objContext.LoginVendedor.FirstOrDefault(v => v.Usuario == usuario);
         }
     }

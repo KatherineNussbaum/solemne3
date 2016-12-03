@@ -8,3 +8,12 @@ C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\bin\Debug\EntityF
 C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\obj\Debug\CapaDato.csprojResolveAssemblyReference.cache
 C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\obj\Debug\CapaDato.dll
 C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaDato\obj\Debug\CapaDato.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaDato\bin\Debug\CapaDato.dll.config
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaDato\bin\Debug\CapaDato.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaDato\bin\Debug\CapaDato.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaDato\bin\Debug\EntityFramework.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaDato\bin\Debug\EntityFramework.SqlServer.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaDato\bin\Debug\EntityFramework.xml
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaDato\bin\Debug\EntityFramework.SqlServer.xml
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaDato\obj\Debug\CapaDato.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaDato\obj\Debug\CapaDato.pdb

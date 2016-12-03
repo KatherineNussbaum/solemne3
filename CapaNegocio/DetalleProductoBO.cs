@@ -18,7 +18,7 @@ namespace CapaNegocio
         public DetalleProductoBO()
         {
             this._objContext = new FuenteSodaEntities();
-            //this._objContext.Configuration.ProxyCreationEnabled = false;
+            this._objContext.Configuration.ProxyCreationEnabled = false;
         }
 
         public IList<DetalleProducto> ListarDetalleProductos(decimal numeroBoleta)

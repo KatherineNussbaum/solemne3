@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="25635ceb-6958-451b-b2e5-996feb55687a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:65277/ServicioBoletaVendedorCliente.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioBoletaVendedorCliente.xsd" MetadataType="Schema" ID="4992dd05-6018-410f-b869-387ef54d7478" SourceId="1" SourceUrl="http://localhost:65277/ServicioBoletaVendedorCliente.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioBoletaVendedorCliente.wsdl" MetadataType="Wsdl" ID="5f114bbe-055a-4e3d-aaab-8680d76e5da7" SourceId="1" SourceUrl="http://localhost:65277/ServicioBoletaVendedorCliente.svc?wsdl" />
+    <MetadataFile FileName="ServicioBoletaVendedorCliente.disco" MetadataType="Disco" ID="814311a8-c273-42ab-87f4-9e0f8da61415" SourceId="1" SourceUrl="http://localhost:65277/ServicioBoletaVendedorCliente.svc?disco" />
+    <MetadataFile FileName="ServicioBoletaVendedorCliente1.xsd" MetadataType="Schema" ID="6475160f-8345-4a39-bc36-a2181bccf38d" SourceId="1" SourceUrl="http://localhost:65277/ServicioBoletaVendedorCliente.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioBoletaVendedorCliente2.xsd" MetadataType="Schema" ID="2af15dc6-96d2-41a1-b43e-264c0e600c4f" SourceId="1" SourceUrl="http://localhost:65277/ServicioBoletaVendedorCliente.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

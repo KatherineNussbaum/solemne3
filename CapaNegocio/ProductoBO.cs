@@ -22,6 +22,7 @@ namespace CapaNegocio
 
         public IList<Producto> ListarProductos()
         {
+
             return this._objContext.Producto.ToList();
         }
     }

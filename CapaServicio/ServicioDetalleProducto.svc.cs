@@ -23,9 +23,9 @@ namespace CapaServicio
             this._detalleProductoBO = new DetalleProductoBO();
         }
 
-        public IList<DetalleProducto> ListarDetalleProductos(decimal NumeroBoleta)
+        public IList<DetalleProducto> ListarDetalleProductos(decimal numeroBoleta)
         {
-            return this._detalleProductoBO.ListarDetalleProductos(NumeroBoleta);
+            return this._detalleProductoBO.ListarDetalleProductos(numeroBoleta);
         }
     }
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="35d54989-12be-48f0-9473-a511dbae44da" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:65277/ServicioLoginVendedor.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioLoginVendedor.disco" MetadataType="Disco" ID="43d86381-ab99-4e87-8204-0eb174576f5b" SourceId="1" SourceUrl="http://localhost:65277/ServicioLoginVendedor.svc?disco" />
+    <MetadataFile FileName="ServicioLoginVendedor.wsdl" MetadataType="Wsdl" ID="faa3c59f-3227-4830-9e08-0dad60c6d98f" SourceId="1" SourceUrl="http://localhost:65277/ServicioLoginVendedor.svc?wsdl" />
+    <MetadataFile FileName="ServicioLoginVendedor.xsd" MetadataType="Schema" ID="ccd70adc-b913-4c60-847a-bbf57bd1f942" SourceId="1" SourceUrl="http://localhost:65277/ServicioLoginVendedor.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioLoginVendedor1.xsd" MetadataType="Schema" ID="9ff891f9-e262-46d6-98ea-77fec69b0b84" SourceId="1" SourceUrl="http://localhost:65277/ServicioLoginVendedor.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioLoginVendedor2.xsd" MetadataType="Schema" ID="02337b3a-a62d-45ed-8600-938d21c1a239" SourceId="1" SourceUrl="http://localhost:65277/ServicioLoginVendedor.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

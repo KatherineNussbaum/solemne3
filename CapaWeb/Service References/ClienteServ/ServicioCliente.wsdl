@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioCliente" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:65277/ServicioCliente.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:65277/ServicioCliente.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:65277/ServicioCliente.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CapaDato" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioCliente_VerificarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IServicioCliente_VerificarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioCliente_EliminarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IServicioCliente_EliminarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioCliente_AgregarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IServicioCliente_AgregarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioCliente_ModificarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IServicioCliente_ModificarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioCliente_BuscarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IServicioCliente_BuscarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioCliente_ListarClientes_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarClientes" />
+  </wsdl:message>
+  <wsdl:message name="IServicioCliente_ListarClientes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarClientesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioCliente">
+    <wsdl:operation name="VerificarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioCliente/VerificarCliente" message="tns:IServicioCliente_VerificarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioCliente/VerificarClienteResponse" message="tns:IServicioCliente_VerificarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioCliente/EliminarCliente" message="tns:IServicioCliente_EliminarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioCliente/EliminarClienteResponse" message="tns:IServicioCliente_EliminarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioCliente/AgregarCliente" message="tns:IServicioCliente_AgregarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioCliente/AgregarClienteResponse" message="tns:IServicioCliente_AgregarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioCliente/ModificarCliente" message="tns:IServicioCliente_ModificarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioCliente/ModificarClienteResponse" message="tns:IServicioCliente_ModificarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioCliente/BuscarCliente" message="tns:IServicioCliente_BuscarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioCliente/BuscarClienteResponse" message="tns:IServicioCliente_BuscarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarClientes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioCliente/ListarClientes" message="tns:IServicioCliente_ListarClientes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioCliente/ListarClientesResponse" message="tns:IServicioCliente_ListarClientes_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicioCliente" type="tns:IServicioCliente">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VerificarCliente">
+      <soap:operation soapAction="http://tempuri.org/IServicioCliente/VerificarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarCliente">
+      <soap:operation soapAction="http://tempuri.org/IServicioCliente/EliminarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarCliente">
+      <soap:operation soapAction="http://tempuri.org/IServicioCliente/AgregarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarCliente">
+      <soap:operation soapAction="http://tempuri.org/IServicioCliente/ModificarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCliente">
+      <soap:operation soapAction="http://tempuri.org/IServicioCliente/BuscarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarClientes">
+      <soap:operation soapAction="http://tempuri.org/IServicioCliente/ListarClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioCliente">
+    <wsdl:port name="BasicHttpBinding_IServicioCliente" binding="tns:BasicHttpBinding_IServicioCliente">
+      <soap:address location="http://localhost:65277/ServicioCliente.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

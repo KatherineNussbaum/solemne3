@@ -34,17 +34,22 @@ namespace CapaServicio
 
         public bool EliminarCliente(string rut)
         {
-            return this.EliminarCliente(rut);
+            return this._clienteBO.EliminarCliente(rut);
+        }
+
+        public IList<Cliente> ListarClientes()
+        {
+            return this._clienteBO.ListarClientes();
         }
 
         public bool ModificarCliente(decimal idCliente, string rut, string nombreCompleto, string direccion)
         {
-            return this.ModificarCliente(idCliente, rut, nombreCompleto, direccion);
+            return this._clienteBO.ModificarCliente(idCliente, rut, nombreCompleto, direccion);
         }
 
         public bool VerificarCliente(string rut)
         {
-            return this.VerificarCliente(rut);
+            return this._clienteBO.VerificarCliente(rut);
         }
     }
 }

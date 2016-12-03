@@ -17,7 +17,7 @@ namespace CapaDato
         public decimal IdDetalle { get; set; }
         public Nullable<decimal> NumeroBoleta { get; set; }
         public Nullable<decimal> IdProducto { get; set; }
-        public decimal? Cantidad { get; set; }
+        public Nullable<decimal> Cantidad { get; set; }
     
         public virtual Boleta Boleta { get; set; }
         public virtual Producto Producto { get; set; }

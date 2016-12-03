@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="82e5705e-1aef-4e33-a527-e19b0ad95102" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:65277/ServicioProducto.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioProducto.disco" MetadataType="Disco" ID="57fc44e6-938c-4c83-a7f4-8c1e40893383" SourceId="1" SourceUrl="http://localhost:65277/ServicioProducto.svc?disco" />
+    <MetadataFile FileName="ServicioProducto.wsdl" MetadataType="Wsdl" ID="54e0be87-2d48-4eaa-bc23-156855a08c1b" SourceId="1" SourceUrl="http://localhost:65277/ServicioProducto.svc?wsdl" />
+    <MetadataFile FileName="ServicioProducto.xsd" MetadataType="Schema" ID="b753052b-990e-409b-b3d8-f5168f7133b4" SourceId="1" SourceUrl="http://localhost:65277/ServicioProducto.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioProducto1.xsd" MetadataType="Schema" ID="c95f51b0-62e0-4dbe-8fd2-f0bfe6d8b978" SourceId="1" SourceUrl="http://localhost:65277/ServicioProducto.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioProducto2.xsd" MetadataType="Schema" ID="0025e50d-233c-4f6e-b1ee-c80ca3608010" SourceId="1" SourceUrl="http://localhost:65277/ServicioProducto.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

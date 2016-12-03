@@ -15,5 +15,6 @@ namespace CapaInterface
         bool AgregarCliente(string rut, string nombreCompleto, string direccion);
         bool ModificarCliente(decimal idCliente, string rut, string nombreCompleto, string direccion);
         Cliente BuscarCliente(string rut);
+        IList<Cliente> ListarClientes();
     }
 }

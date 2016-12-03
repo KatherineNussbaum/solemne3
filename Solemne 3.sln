@@ -14,6 +14,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocio", "CapaNegocio\CapaNegocio.csproj", "{ADEF9677-A7BA-449E-922F-68F4F76002EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaWeb", "CapaWeb\CapaWeb.csproj", "{13AFD619-5509-4D7D-9A24-9E70267ACB45}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BC6D551B-5FFE-4562-ABCA-5E4D58842F94} = {BC6D551B-5FFE-4562-ABCA-5E4D58842F94}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaServicio", "CapaServicio\CapaServicio.csproj", "{BC6D551B-5FFE-4562-ABCA-5E4D58842F94}"
 EndProject

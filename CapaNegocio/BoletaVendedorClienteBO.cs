@@ -17,26 +17,29 @@ namespace CapaNegocio
         public BoletaVendedorClienteBO()
         {
             this._objContext = new FuenteSodaEntities();
+            this._objContext.Configuration.ProxyCreationEnabled = false;
         }
 
-        public IList<BoletaVendedorCliente> ListarBoletaVendedorCliente(decimal idVendedor)
+        public IList<BoletaVendedorCliente> ListarBoletaVendedorCliente(string usuario)
         {
-            if(idVendedor <= 0)
+            if(string.IsNullOrEmpty(usuario) || string.IsNullOrWhiteSpace(usuario))
             {
                 throw new BoletaVendedorClienteException("Falta: usuario");
             }
             IList<BoletaVendedorCliente> boletaVendedorCliente = (from b in _objContext.Boleta
-                                                                      join c in _objContext.Cliente
-                                                                      on b.IdCliente equals c.IdCliente
-                                                                      where b.IdVendedor == idVendedor
-                                                                      select new BoletaVendedorCliente
-                                                                      {
-                                                                          NumeroBoleta = b.NumeroBoleta,
-                                                                          Fecha = b.Fecha,
-                                                                          Estado = b.Estado,
-                                                                          ClienteRut = c.Rut,
-                                                                          ClienteNombreCompleto = c.NombreCompleto
-                                                                      }).ToList();
+                                                                  join c in _objContext.Cliente
+                                                                  on b.IdCliente equals c.IdCliente
+                                                                  join v in _objContext.Vendedor
+                                                                  on b.IdVendedor equals v.IdVendedor
+                                                                  where v.Usuario == usuario
+                                                                  select new BoletaVendedorCliente
+                                                                  {
+                                                                    NumeroBoleta = b.NumeroBoleta,
+                                                                    Fecha = b.Fecha,
+                                                                    Estado = b.Estado,
+                                                                    ClienteRut = c.Rut,
+                                                                    ClienteNombreCompleto = c.NombreCompleto
+                                                                  }).ToList();
             return boletaVendedorCliente;
 
         }

@@ -10,6 +10,6 @@ namespace CapaInterface
 {
     public interface IDetalleProductoBO
     {
-        IList<DetalleProducto> ListarDetalleProductos(decimal NumeroBoleta);
+        IList<DetalleProducto> ListarDetalleProductos(decimal numeroBoleta);
     }
 }

@@ -10,8 +10,7 @@ namespace CapaInterface
 {
     public interface ILoginVendedorBO
     {
-        IList<LoginVendedor> ListarLoginVendedor();
-
+        bool VerificarLoginVendedor(string usario);
         LoginVendedor BuscarLoginVendedor(string usuario);
     }
 }

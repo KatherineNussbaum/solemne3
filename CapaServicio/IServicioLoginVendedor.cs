@@ -14,7 +14,7 @@ namespace CapaServicio
     public interface IServicioLoginVendedor
     {
         [OperationContract]
-        IList<LoginVendedor> ListarLoginVendedor();
+        bool VerificarLoginVendedor(string usario);
 
         [OperationContract]
         LoginVendedor BuscarLoginVendedor(string usuario);

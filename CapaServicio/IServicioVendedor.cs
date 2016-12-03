@@ -19,5 +19,7 @@ namespace CapaServicio
         IList<Vendedor> ListarVendedores();
         [OperationContract]
         Vendedor BuscarVendedor(decimal IdVendedor);
+        [OperationContract]
+        Vendedor BuscarVendedorUsuario(string usuario);
     }
 }

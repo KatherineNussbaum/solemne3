@@ -15,6 +15,6 @@ namespace CapaServicio
     public interface IServicioDetalleProducto
     {
         [OperationContract]
-        IList<DetalleProducto> ListarDetalleProductos(decimal NumeroBoleta);
+        IList<DetalleProducto> ListarDetalleProductos(decimal numeroBoleta);
     }
 }

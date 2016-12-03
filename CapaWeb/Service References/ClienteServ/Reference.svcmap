@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ff8e4855-9329-4d39-a10e-b5f467c2832a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:65277/ServicioCliente.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioCliente.wsdl" MetadataType="Wsdl" ID="10de5e3c-404c-4e77-bb30-779a3da3e910" SourceId="1" SourceUrl="http://localhost:65277/ServicioCliente.svc?wsdl" />
+    <MetadataFile FileName="ServicioCliente.xsd" MetadataType="Schema" ID="3a619078-d869-4432-95c3-9809153fe8fd" SourceId="1" SourceUrl="http://localhost:65277/ServicioCliente.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioCliente1.xsd" MetadataType="Schema" ID="04ccc93f-23f8-4275-b525-108112ae5be6" SourceId="1" SourceUrl="http://localhost:65277/ServicioCliente.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioCliente2.xsd" MetadataType="Schema" ID="72afa4f7-4628-4cf7-a11d-0dfa03599845" SourceId="1" SourceUrl="http://localhost:65277/ServicioCliente.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioCliente.disco" MetadataType="Disco" ID="7b265197-f487-408d-80a3-335699d30808" SourceId="1" SourceUrl="http://localhost:65277/ServicioCliente.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

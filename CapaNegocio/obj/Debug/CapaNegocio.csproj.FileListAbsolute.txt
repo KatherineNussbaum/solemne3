@@ -14,3 +14,21 @@ C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\bin\Debug\Enti
 C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\Katherine Nussbaum\Desktop\base net\Solution\CapaNegocio\obj\Debug\CapaNegocio.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\obj\Debug\CapaNegocio.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\obj\Debug\CapaNegocio.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\CapaNegocio.dll.config
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\CapaNegocio.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\CapaNegocio.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\CapaDato.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\CapaEntidad.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\CapaException.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\CapaInterface.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\EntityFramework.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\EntityFramework.SqlServer.dll
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\CapaDato.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\CapaEntidad.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\CapaException.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\CapaInterface.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\EntityFramework.xml
+X:\SantoTomas\Semestre 4\puntoNet\Solemne3\solemne3\CapaNegocio\bin\Debug\EntityFramework.SqlServer.xml

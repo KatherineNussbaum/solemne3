@@ -25,9 +25,22 @@ namespace CapaNegocio
             return this._objContext.Vendedor.ToList();
         }
 
-        public Vendedor BuscarVendedor(decimal IdVendedor)
+        public Vendedor BuscarVendedor(decimal idVendedor)
         {
-            return this._objContext.Vendedor.FirstOrDefault(v => v.IdVendedor == IdVendedor);
+            if(idVendedor <= 0)
+            {
+                throw new VendedorException("Falta: id de vendedor");
+            }
+            return this._objContext.Vendedor.FirstOrDefault(v => v.IdVendedor == idVendedor);
+        }
+
+        public Vendedor BuscarVendedorUsuario(string usuario)
+        {
+            if(string.IsNullOrEmpty(usuario) || string.IsNullOrWhiteSpace(usuario))
+            {
+                throw new VendedorException("Falta: usuario");
+            }
+            return this._objContext.Vendedor.FirstOrDefault(v => v.Usuario == usuario);
         }
     }
 }

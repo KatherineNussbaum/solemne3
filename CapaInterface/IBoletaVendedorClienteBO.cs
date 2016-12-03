@@ -10,6 +10,6 @@ namespace CapaInterface
 {
     public interface IBoletaVendedorClienteBO
     {
-        IList<BoletaVendedorCliente> ListarBoletaVendedorCliente(decimal idVendedor);
+        IList<BoletaVendedorCliente> ListarBoletaVendedorCliente(string usuario);
     }
 }

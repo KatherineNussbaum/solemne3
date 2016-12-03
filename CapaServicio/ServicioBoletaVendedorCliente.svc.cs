@@ -17,10 +17,15 @@ namespace CapaServicio
     public class ServicioBoletaVendedorCliente : IServicioBoletaVendedorCliente
     {
         private IBoletaVendedorClienteBO _boletaVendedorClienteBO;
-        
-        public IList<BoletaVendedorCliente> ListarBoletaVendedorCliente(decimal idVendedor)
+
+        public ServicioBoletaVendedorCliente()
         {
-            return this._boletaVendedorClienteBO.ListarBoletaVendedorCliente(idVendedor);
+            this._boletaVendedorClienteBO = new BoletaVendedorClienteBO();
+        }
+        
+        public IList<BoletaVendedorCliente> ListarBoletaVendedorCliente(string usuario)
+        {
+            return this._boletaVendedorClienteBO.ListarBoletaVendedorCliente(usuario);
         }
     }
 }
