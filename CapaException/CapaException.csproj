@@ -41,7 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoletaException.cs" />
+    <Compile Include="BoletaVendedorClienteException.cs" />
+    <Compile Include="ClienteException.cs" />
+    <Compile Include="DetalleBoletaException.cs" />
+    <Compile Include="DetalleProductoException.cs" />
+    <Compile Include="LoginVendedorException.cs" />
+    <Compile Include="ProductoException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VendedorException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

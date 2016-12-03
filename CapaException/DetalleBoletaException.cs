@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaException
 {
-    class DetalleBoletaException : Exception
+    public class DetalleBoletaException : Exception
     {
         public DetalleBoletaException(string mensaje) : base(mensaje)
         {
